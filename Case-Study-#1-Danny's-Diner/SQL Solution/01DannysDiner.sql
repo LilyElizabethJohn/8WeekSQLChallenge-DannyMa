@@ -147,3 +147,31 @@
  from calc_points
  group by customer_id
 
+ --Recreate the following table output using the available data:
+ --customer_id	order_date	product_name	price	member(Y/N)
+
+ select s.customer_id, s.order_date, menu.product_name, menu.price, case when s.order_date>=members.join_date then 'Y' else 'N' end as member
+ from [DannyMa].[dbo].[case_1_sales] s
+ left join [DannyMa].[dbo].[case_1_members] members
+ on s.customer_id=members.customer_id
+ inner join [DannyMa].[dbo].[case_1_menu] menu
+ on s.product_id=menu.product_id
+
+ --Danny also requires further information about the ranking of customer products, 
+ --but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
+
+ with member_classification as
+ (
+  select s.customer_id, s.order_date, menu.product_name, menu.price, case when s.order_date>=members.join_date then 'Y' else 'N' end as member
+ from [DannyMa].[dbo].[case_1_sales] s
+ left join [DannyMa].[dbo].[case_1_members] members
+ on s.customer_id=members.customer_id
+ inner join [DannyMa].[dbo].[case_1_menu] menu
+ on s.product_id=menu.product_id
+ )
+
+ select *
+	,case when member like 'N' then NULL else dense_rank() over (partition by customer_id,member order by order_date) end as ranking
+ from member_classification;
+
+ /****************************************************/
