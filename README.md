@@ -1,5 +1,7 @@
 # 8WeekSQLChallenge-DannyMa
-The 8 Week SQL Challenge is a data apprenticeship program by Data With Danny. This repository contains my solutions to the challenges. **[8WeekSQLChallenge](https://8weeksqlchallenge.com)**.
+The 8 Week SQL Challenge is a data apprenticeship program by Data With Danny. This repository contains my solutions to the challenges. 
+
+For original challenge please visit : **[8WeekSQLChallenge](https://8weeksqlchallenge.com)**.
 
 The repository is setup as individual folders for each case study containing SQL as well as Python solutions.
 Please refer to:
