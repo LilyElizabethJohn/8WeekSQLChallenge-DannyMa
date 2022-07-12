@@ -7,7 +7,7 @@ For original challenge please visit : **[🥞 8WeekSQLChallenge - Case Study 1 -
 The repository is setup as individual folders for each case study containing SQL as well as Python solutions.
 Please refer to:
 - the readme file explaining the problem statement and datasets used
-- SQL file to create the schema, tables and loading data
+- [SQL script to create the schema, tables and loading data](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/01DannysDinerSchema.sql)
 - MD files which contains SQL queries answering the respective challenge questions
 - Jupyter notebook with python solutions to the same case study questions
 
