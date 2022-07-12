@@ -74,4 +74,6 @@ Recreate the following table output using the available data:
 ## Rank All The Things
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 
-![alt text](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/Bonus%20Qns%201.jpg)
+![alt text](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/Bonus%20Qns%202.jpg)
+
+Click [here](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/tree/main/Case-Study-%231-Danny's-Diner) to go back to Danny's Diner!
