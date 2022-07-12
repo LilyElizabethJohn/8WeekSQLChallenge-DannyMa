@@ -12,7 +12,7 @@ Please refer to:
 
 
 ## Challenge case studies
-* [Case Study #1 - Danny's Diner](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa)
+* [Case Study #1 - Danny's Diner](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/tree/main/Case-Study-%231-Danny's-Diner)
 * [Case Study #2 - Pizza Runner](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa)
 * [Case Study #3 - Foodie-Fi](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa)
 * [Case Study #4 - Data Bank](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa)
