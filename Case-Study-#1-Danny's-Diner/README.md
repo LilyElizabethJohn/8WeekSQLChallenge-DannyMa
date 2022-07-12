@@ -8,6 +8,7 @@ The repository is setup as individual folders for each case study containing SQL
 Please refer to:
 - the readme file explaining the problem statement and datasets used
 - [SQL script to create the schema, tables and loading data](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/01DannysDinerSchema.sql)
+- [SQL script with solutions to Challenge questions](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/01DannysDiner.sql)
 - MD files which contains SQL queries answering the respective challenge questions
 - Jupyter notebook with python solutions to the same case study questions
 
