@@ -36,6 +36,7 @@ Danny also requires further information about the ranking of customer products, 
   on s.[product_id]=m.[product_id]
   group by s.[customer_id];
 ``` 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q1.jpg)
 
 ***
 
@@ -46,6 +47,8 @@ Danny also requires further information about the ranking of customer products, 
   from [DannyMa].[dbo].[case_1_sales]
   group by [customer_id];
 ``` 
+
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q2.jpg)
 
 ***
 
@@ -65,6 +68,8 @@ Danny also requires further information about the ranking of customer products, 
 	  where r.rnk=1;
 ``` 
 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q3.jpg)
+
 ***
 
 ###  4. What is the most purchased item on the menu and how many times was it purchased by all customers?
@@ -77,6 +82,7 @@ Danny also requires further information about the ranking of customer products, 
   group by m.[product_name]
   order by purchase_count desc;
 ``` 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q4.jpg)
 
 ***
 
@@ -96,6 +102,7 @@ Danny also requires further information about the ranking of customer products, 
  on r.product_id=m.product_id
  where r.rnk=1;
 ``` 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q5.jpg)
 
 ***
 
@@ -117,7 +124,8 @@ Danny also requires further information about the ranking of customer products, 
  from first_order_ranking
  where rnk=1;
 ``` 
-	
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q6.jpg)
+
 ***
 
 ###  7. Which item was purchased just before the customer became a member?
@@ -139,6 +147,8 @@ Danny also requires further information about the ranking of customer products, 
  where rnk=1;
 ``` 
 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q7.jpg)
+
 ***
 
 ###  8. What is the total items and amount spent for each member before they became a member?
@@ -153,6 +163,7 @@ Danny also requires further information about the ranking of customer products, 
  where s.order_date<members.join_date
  group by s.customer_id;
 ``` 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q8.jpg)
 
 ***
 
@@ -165,6 +176,7 @@ Danny also requires further information about the ranking of customer products, 
  on s.product_id=menu.product_id
  group by s.customer_id;
 ``` 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q9.jpg)
 
 ***
 
@@ -196,6 +208,8 @@ Danny also requires further information about the ranking of customer products, 
  group by customer_id
 ``` 
 
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q10.jpg)
+
 ***
 
 ###  Bonus Questions
@@ -211,7 +225,8 @@ Create basic data tables that Danny and his team can use to quickly derive insig
  inner join [DannyMa].[dbo].[case_1_menu] menu
  on s.product_id=menu.product_id
 ``` 
-	
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q11.jpg)
+
 ***
 
 #### Rank All The Things
@@ -232,6 +247,8 @@ Danny also requires further information about the ranking of customer products, 
 	,case when member like 'N' then NULL else dense_rank() over (partition by customer_id,member order by order_date) end as ranking
  from member_classification;
 ``` 
+
+![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q12.jpg)
 
 ***
 
