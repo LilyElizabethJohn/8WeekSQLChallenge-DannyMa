@@ -251,7 +251,7 @@ Danny also requires further information about the ranking of customer products, 
 ![image](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/blob/main/Case-Study-%231-Danny's-Diner/SQL%20Solution/Images/Q12.jpg)
 
 ***
-
+Click [here](https://github.com/LilyElizabethJohn/8WeekSQLChallenge-DannyMa/tree/main/Case-Study-%231-Danny's-Diner) to go back to Danny's Diner!
 
 
 
